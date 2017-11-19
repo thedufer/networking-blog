@@ -13,7 +13,8 @@ port number. If there is no connection on that port or the other end is turned
 off, the bytes are dropped. Otherwise, they are transmitted as-is.
 
 Obviously this is pretty unrealistic, but it's a good place to start. In the
-future, we'll add some features, like making the connections more realistic.
+future, we'll add some more features, like making the connections more realistic
+and assigning each port/node pair a persistent address.
 
 ## Simulator
 

@@ -3,7 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-
 This blog follows my adventures learning about computer networking by designing
 and implementing my own networking stack, as well as some necessary appliances
 (switches, routers, etc.). This is enabled by a network simulation layer that
