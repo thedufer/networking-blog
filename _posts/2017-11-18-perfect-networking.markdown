@@ -16,7 +16,7 @@ Obviously this is pretty unrealistic, but it's a good place to start. In the
 future, we'll add some more features, like making the connections more realistic
 and assigning each port/node pair a persistent address.
 
-## Simulator
+### Simulator
 
 The simulator consists of a few different parts. First there's the server, which
 accepts connections from programs representing the nodes and shuttles data
@@ -28,7 +28,7 @@ This can all be found on [Github](https://github.com/thedufer/ocaml-networking).
 `bin` contains the source for the client and server, while `src` contains the
 library code.
 
-## Library Interface
+### Library Interface
 
 While there is quite a bit of code in that library, clients should need very
 little of it to get started. In particular, there is one function that allows a
@@ -56,7 +56,7 @@ type t = {
 
 Ports are simply numbered starting from 0 on each node.
 
-## Simple Example
+### Simple Example
 
 As an example, we'll create a network with 3 nodes, all connected in a circle.
 The first step is to start the server:
@@ -90,7 +90,7 @@ There is a command in my example node implementation called `passthrough` that
 connects stdin/stdout to a single port, which can be used to see the network in
 action.
 
-## Next Up
+### Next Up
 
 Next time, we'll introduce some imperfections to these connections to get us
 closer to something real-world.
