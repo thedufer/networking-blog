@@ -46,8 +46,13 @@ To recap, this allows us to send discrete messages of up to 65,535 bytes, with
 reasonable confidence that messages received contain no errors. However, we will
 drop any message that does contain errors.
 
-There is a command implementing this protocol in my example node implementation under the name "ethernet". It sends each line of input as a message.
+There is a command implementing this protocol in my example node implementation
+under the name "layer-one". It sends each line of input as a message.
 
 ### Next Up
 
-Now that I've exhausted my supply of prepared code, the next post won't be for a little while. For next time, I'm hoping to solve the problem of transmitting messages across a local network larger than a single connection, by using switches on non-endpoint nodes. We'll add persistent addresses (analogous to MAC addresses) to each node to help with this.
+Now that I've exhausted my supply of prepared code, the next post won't be for a
+little while. For next time, I'm hoping to solve the problem of transmitting
+messages across a local network larger than a single connection, by using
+switches on non-endpoint nodes. We'll add persistent addresses (analogous to MAC
+addresses) to each node to help with this.
