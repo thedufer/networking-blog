@@ -3,6 +3,7 @@ layout: post
 title:  "Perfect Networking"
 date:   2017-11-18 12:10:37 -0500
 ---
+
 To get started, we need to get this network simulator working. Let's talk
 about how it'll work at a high level.
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Going the Distance"
 date:   2018-01-21 21:02:46 -0500
 ---
+
 This time we want to get messages across a small network, rather than just a
 single hop. In order to do so, we'll add a globally unique address to each node,
 design a protocol for addressing messages, and then build some software to run
@@ -10,7 +11,7 @@ on the intermediate nodes.
 
 In the end, instead of needing a fully connected graph like we did with our last
 protocol, we'll be able to get away with simpler graphs - at the cost of
-additional nodes, since non-edge nodes will be reserved for acting as switches.
+additional nodes, since non-edge nodes will be reserved for acting as hubs.
 
 ### Addresses
 
@@ -33,14 +34,18 @@ restriction on the payload comes from - remember, our layer one protocol only
 allows for payloads up to 65535 bytes, and we've taken up 16 of them with
 addresses.
 
-### Switches
+### Hubs
 
-A "switch" is a non-edge node at this layer. Switches are quite simply - they
-connect to one or more other nodes, and simply send every message they get on
-any port to all of the ports. This requires very little knowledge of the
-network, which allows the switch to be quite simple.
+A "hub" is a non-edge node at this layer. Hubs connect to one or more other
+nodes, and send every message they get on any port to all of the other ports.
+This requires very little knowledge of the network, which allows the hub to be
+quite simple.
 
 This will cause a significant increase in the amount of traffic. Edge nodes will
 need to filter out messages that aren't addresses to them. Next time, we'll talk
-about some ways to cut down on the traffic by making our switches a bit more
+about some ways to cut down on the traffic by making our hubs a bit more
 clever.
+
+In addition, this means that any network topology that includes a loop of
+hubs will send messages over and over again, as they travel the loop in
+circles. We will talk about how to solve this problem a bit later.

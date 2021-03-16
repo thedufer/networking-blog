@@ -3,6 +3,7 @@ layout: post
 title:  "What's This All About?"
 date:   2017-11-17 12:09:42 -0500
 ---
+
 I'm going to kick off this blog with a description of this project. I'm sure
 it'll change as we go, but we've gotta start somewhere.
 

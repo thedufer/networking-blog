@@ -3,6 +3,7 @@ layout: post
 title:  "A Little More Realistic"
 date:   2017-11-19 09:43:05 -0500
 ---
+
 Last time, we got a basic network simulator working. Now we'll make the
 connections a bit less perfect, and come up with a protocol that allows us to
 still get messages across.
